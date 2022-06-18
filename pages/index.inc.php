@@ -27,8 +27,7 @@ $REX['DB']['5']['PSW'] = isset($db['password']) ? $db['password'] : '';
 $REX['DB']['5']['NAME'] = isset($db['name']) ? $db['name'] : '';
 $REX['DB']['5']['PERSISTENT'] = false;
 
-
-include rex_path::core('layout/top.php');
+require $REX['INCLUDE_PATH'] . '/layout/top.php';
 
 rex_title('YConverter', $REX['ADDON']['pages']['yconverter']);
 
